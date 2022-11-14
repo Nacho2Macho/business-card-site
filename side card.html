@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link
+      rel="stylesheet"
+      href="/js/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/js/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css"
+    />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/.CSS/kursovay.CSS" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Card</title>
+  </head>
+  <body>
+    <nav id="nav" class="navbar">
+      <div class="container">
+        <a href="kursovay.html" class="navbar-brand">
+          <img
+            src="/img/SUNNY.png"
+            alt="Ой...здесь должен был быть наш логотип"
+          />
+        </a>
+        <div class="navbar-wrap">
+          <ul class="navbar-menu">
+            <li><a href="#tur">О турагентстве</a></li>
+            <li><a href="#turs">Горящие туры</a></li>
+            <li><a href="#benefits">Преимущества</a></li>
+            <li><a href="tel:+79308244570">+79308244570</a></li>
+          </ul>
+          <a href="#popup" class="button">
+            <span class="button__text">
+              <span>Перезвонить нам</span>
+            </span>
+          </a>
+          <form id="popup" class="popup">
+            <a href="#header" class="popup__area"></a>
+            <div class="popup__body">
+              <div class="popup__content">
+                <a href="#nav" class="popup__close"></a>
+
+                <div class="popup__title"><h1>Заполните Форму</h1></div>
+                <div class="form">
+                  <div class="field">
+                    <div class="field__title">Введите имя</div>
+                    <div class="field__input field__input__text">
+                      <input
+                        class="input js-input js-input-name"
+                        type="text"
+                        name="name"
+                        placeholder="Введите имя"
+                      />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field__title">Введите номер телефона</div>
+                    <div class="field__input field__input__phone">
+                      <input
+                        class="input js-input js-input-tel"
+                        type="tel"
+                        name="tel"
+                        placeholder="x-xxx-xxx-xx-xx"/>
+                        <div id ="error"class="alert alert-primary mt-4" role="alert" style="display:none;">
+            
+                        </div>
+                    </div>
+                  </div>
+                  <div class="field_submit">
+                    <a href=""
+                      ><input type="submit" value="Заказать звонок менеджера"
+                    /></a>
+                    <div id ="success"class="alert alert-primary mt-4" role="alert" style="display:none;">
+            
+                    </div>
+                  </div>
+                </div>
+                <div class="popup_form_text">
+                  Нажимая на кнопку, Вы принимаете
+                  <a
+                    target="_blank"
+                    href="https://billing24.ru/soglashenie-ob-obrabotke-personalnyh-dannyh/"
+                    >Положение</a
+                  >
+                  и
+                  <a
+                    target="_blank"
+                    href="https://tilda.education/articles-personal-data-law"
+                    >Согласие</a
+                  >
+                  на обработку персональных данных.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main class="main" style="background-image: url(/img/Main-page.jpg)" id="tur">
+      <div class="content">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3 main_content">
+            <div class="title">
+              <p><span>Ведущее</span></p>
+              <p><span>турагентство</span></p>
+            </div>
+            <div class="sub__title">
+              <p>
+                <span
+                  >Покупайте туры онлайн. Самые популярные направления.</span
+                >
+              </p>
+              <p>Горящие туры по доступным ценам!</p>
+            </div>
+            <a href="#zakaz" class="consl">
+              <span class="consl__text">
+                <span>Получить консультацию</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <form id="zakaz" class="zakaz">
+        <a href="#header" class="zakaz__area"></a>
+        <div class="zakaz__body">
+          <div class="zakaz__content">
+            <a href="#header" class="zakaz__close"></a>
+            <div class="zakaz__title"><p>Оставить заявку</p></div>
+            <div class="field">
+              <div class="field__title">Введите имя</div>
+              <div class="field__input field__input__text">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Введите имя"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <div class="field__title">Введите E-mail</div>
+              <div class="field__input field__input__mail">
+                <input
+                  type="text"
+                  name="mail"
+                  placeholder="mail@mail.ru"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <div class="field__title">Введите номер телефона</div>
+              <div class="field__input field__input__phone">
+                <input
+                  type="tel"
+                  required="required"
+                  name="tel"
+                  placeholder="x-xxx-xxx-xx-xx"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="field_z">
+                <a href=""
+                ><input type="submit" value="Заказать звонок менеджера"
+              /></a>
+              <div id ="zakaz_error"class="alert alert-primary mt-4" role="alert" style="display:none;">
+            
+              </div>
+              </div>
+            </div>
+            <div class="zakaz_form_text">
+              Нажимая на кнопку, Вы принимаете
+              <a
+                target="_blank"
+                href="https://billing24.ru/soglashenie-ob-obrabotke-personalnyh-dannyh/"
+                >Положение</a
+              >
+              и
+              <a target="_blank">Согласие</a>
+              на обработку персональных данных.
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <div class="slik" style="background-image: url(/img/47-fon.png)" id="turs">
+      <h1 >Горящие туры</h1>
+      <div class="slider">
+        <div class="slider__item">
+          <img src="/img/slider/Georgia_slider_1.jpg" alt="" />
+          <div class="slider__title">
+            <span>Грузия</span>
+          </div>
+          <div class="slider__subtitle">
+            <span> Тбилиси,Батуми,Мцхета </span>
+          </div>
+          <a href="#" class="tour">
+            <span class="tour__text">
+              <span >Купить тур</span>
+            </span>
+          </a>
+        </div>
+        <div class="slider__item">
+          <img src="/img/slider/Kazakhstan_slider_2.jpg" alt="" />
+          <div class="slider__title">
+            <span>Казахстан</span>
+          </div>
+          <div class="slider__subtitle">
+            <span > Алма-Ата,Астана,Шымкент </span>
+          </div>
+          <a href="#" class="tour">
+            <span class="tour__text">
+              <span>Купить тур</span>
+            </span>
+          </a>
+        </div>
+        <div class="slider__item">
+          <img src="/img/slider/Turkey_slider_3.jpg" alt="" />
+          <div class="slider__title">
+            <span>Турция </span>
+          </div>
+          <div class="slider__subtitle">
+            <span> Тбилиси,Батуми,Мцхета </span>
+          </div>
+          <a href="#" class="tour">
+            <span class="tour__text">
+              <span>Купить тур</span>
+            </span>
+          </a>
+        </div>
+        <div class="slider__item">
+          <img src="/img/slider/saudi arabia_slider_4.jpeg" alt="" />
+          <div class="slider__title">
+            <span>Саудовская Аравия</span>
+          </div>
+          <div class="slider__subtitle">
+            <span> Эр-Рияд,Джидда,Мекка </span>
+          </div>
+          <a href="#" class="tour">
+            <span class="tour__text">
+              <span>Купить тур</span>
+            </span>
+          </a>
+        </div>
+        <div class="slider__item">
+          <img src="/img/slider/Saudi-Arabia.jpg" alt="" />
+          <div class="slider__title">
+            <span>Беларусь</span>
+          </div>
+          <div class="slider__subtitle">
+            <span> Гомель,Витебск,Брест </span>
+          </div>
+          <a href="#" class="tour">
+            <span class="tour__text">
+              <span>Купить тур</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="benefit" id="benefits">
+      <div class="container">
+        <div class="rows">
+          <div class="col-md-10">
+            <div class="mb-5">
+              <span>Преимущества турагентства</span>
+            </div>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-lg-4">
+            <div class="listing-item">
+              <img src="/img/arts2.jpg" alt="" />
+              <h2>Гарантия честных цен</h2>
+              <p>
+                Вам не нужно бегать по рынкам, стоять в очередях и разбираться в
+                марках штукатурных составов. Забудьте о переплате за транспорт.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="listing-item">
+              <img src="/img/arts1.jpg" alt="" />
+              <h2>Поддержка до и после покупки тура</h2>
+              <p>
+                Вы получаете внимательность к деталям сметы, все работы
+                начинаются вовремя и завершаются в срок. Без срывов и цейтнотов.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="listing-item">
+              <img src="/img/arts3.jpg" alt="" />
+              <h2>Надежные туроператоры</h2>
+              <p>
+                Никакой предоплаты! Расплачивайтесь только по факту, только
+                после сдачи очередного этапа выполненных работ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="side-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2 class="footer-heading mb-3">Instagram</h2>
+            <div class="row">
+              <div class="col-4 gal_col">
+                <img src="/img/footer/art.jpg" alt="" />
+              </div>
+              <div class="col-4 gal_col">
+                <img src="/img/footer/art2.jpg" alt="" />
+              </div>
+              <div class="col-4 gal_col">
+                <img src="/img/footer/art3.jpg" alt="" />
+              </div>
+              <div class="col-4 gal_col">
+                <img src="/img/footer/art4.jpg" alt="" />
+              </div>
+              <div class="col-4 gal_col">
+                <img src="/img/footer/5(.jpg" alt="" />
+              </div>
+              <div class="col-4 gal_col">
+                <img src="/img/footer/last.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 ml-auto">
+                <h2 class="footer-heading mb-4">Быстрые ссылки</h2>
+                <ul class="list">
+                  <li><a href="#">О турагентстве</a></li>
+                  <li><a href="#turs">Горящие туры</a></li>
+                  <li><a href="#benefits">Преимущества</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <h2 class="footer-heading mb-4">Newsletter</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                  nesciunt fugit nulla possimus, illum quas earum minus fugiat
+                  facilis sapiente asperiores nostrum. Placeat nisi quam
+                  voluptatum quod sapiente itaque ea?
+                </p>
+                <form action="#" class="d-flex">
+                  <input
+                    type="text"
+                    class="form-control mr-3"
+                    placeholder="Email"
+                  />
+                  <input type="submit" value="Send" class="btn" />
+                </form>
+              </div>
+              <div class="footer__column">
+                <div class="footer__social social">
+                  <a href="" class="social__link">
+                    <img src="/psd/facebook.png" alt="">
+                  </a>
+                  <a href="" class="social__link">
+                    <img src="/psd/twitter.png" alt="">
+                  </a>
+                  <a href="" class="social__link">
+                    <img src="/psd/nn.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row1 pt-5 mt-5">
+          <div class="col-md-12">
+            <div class="pt-5">
+              <p>Copyright © 2022 All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/JQerry1.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="/js/side script.js"></script>
+  </body>
+</html>
